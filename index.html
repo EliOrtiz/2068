@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eli and Ryan's Pac-man game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pacman.js" charset="utf-8"></script>
+  </head>
+  <body>
+  	<h1>Eli & Ryan Pac Man Game</h1>
+    <div class="grid"></div>
 
-<h1>The template Element</h1>
+    <h3>Score:<span id="score"></span></h3>
 
-<p>Click the button below to display the hidden content from the template element.</p>
-
-<button onclick="showContent()">Show hidden content</button>
-
-<template>
-  <h2>Flower</h2>
-  <img src="img_white_flower.jpg" width="214" height="204">
-</template>
-
-<script>
-function showContent() {
-  var temp = document.getElementsByTagName("template")[0];
-  var clon = temp.content.cloneNode(true);
-  document.body.appendChild(clon);
-}
-</script>
-
-</body>
+  </body>
 </html>
